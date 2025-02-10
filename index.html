@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/31780deaed.js" crossorigin="anonymous"></script>
+    <script src="javascript/javascript-jquery.js"></script>    
+</head>
+    <body>
+    <div id="wrapper">
+        <div id="banner">
+            <header>
+                <div class="banner-bg"></div>
+
+                <div class="logo"> <img src="img/logo.jpg" alt="ufc"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Quienes somos</a></li>
+                        <li><a href="#">Muay Thai</a></li>
+                        <li><a href="#">BJJ</a></li>
+                        <li><a href="#">Tienda</a></li>
+                        <li><a href="#">Empresas</a></li>
+                        <li><a href="#">Blog</a></li>
+                        
+                    </ul>
+                </nav>
+                <div class="title">
+                    <h1>Academia de Muay Thai</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, beatae.</p>
+                    <a href="#email-form" class="title-button">Prueba</a>
+                </div>
+            </header>
+
+        </div>
+        <main>
+            <h2 class="center">Ventajas de nuestra academia</h2>
+            <div id="why">
+                <ul>
+                    <li class="box">
+                        <div class="icon"><i class="fa-solid fa-shirt fa-2xl" style="color: #B197FC;"></i></div>
+                        <h2>Material</h2>
+                        <p>El establecimiento cuenta con material propio de buena calidad.</p>
+                    </li>
+                    <li class="box">
+                        <div class="icon"><i class="fa-solid fa-mug-saucer fa-2xl" style="color: #B197FC;"></i></div>
+                        <h2>Zona de relax</h2>
+                        <p>Zona de relax con sofá y maquina recreativa.</p>
+                    </li>
+                    <li class="box"> 
+                        <div class="icon"><i class="fa-solid fa-train-subway fa-2xl" style="color: #B197FC;"></i></div>
+                        <h2>Cercania</h2>
+                        <p>a 2 minutos de la estación de collblanc.</p>
+                    </li>
+                    <li class="box">
+                        <div class="icon"><i class="fa-solid fa-camera fa-2xl" style="color: #B197FC;"></i></div>
+                        
+                        <h2>Cercania</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                </ul>
+            </div>
+            <h2 class="center">Horario</h2>
+            <div id="horario">
+                <div id="foto-horario"></div>
+
+            </div>
+        </main>
+        <footer>
+            
+            <div>
+                
+                <div id="where">
+                    <h2>Donde estamos?</h2>
+                    <div id="container-map">
+                        <div id="map"></div>
+
+                    </div>
+
+                </div>
+                <div id="#div-form">
+                    <form id="email-form">
+                        <h2>Reserva ahora!</h2>
+                        <input type="text" name="name" placeholder="Nombre">
+                        <input type="text"  name="full-name" placeholder="Apellidos">
+                        <input type="text"  name="mail" placeholder="Mail">
+                        <select name="clase" id="clase">
+                            <option value="" id="selected" selected >-- Clase --</option>
+                            <option value="muay-thai">Muay-Thai</option>
+                            <option value="boxeo">Boxeo</option>
+                            <option value="bjj">BJJ</option>
+
+                        </select>
+                        <select name="dia" id="dia">
+                            <option value="" id="selected" selected>-- Dia --</option>
+                            <option value="lunes">Lunes</option>
+                            <option value="martes">Martes</option>
+                            <option value="miercoles">Miercoles</option>
+                            <option value="jueves">Jueves</option>
+                            <option value="viernes">Viernes</option>
+                        </select>
+                        <select name="hora" id="hora">
+                            <option value="" id="selected" selected>-- Hora --</option>
+                            <!-- options añadidas en javascript -->
+                        </select>
+                        <input type="submit" id="submit-button">
+                    </form>
+                </div>
+                
+            </div>
+        </footer>
+
+    </div>
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZLdUogYnPz3xSzprHTozT6357MNACXdU&loading=async&callback=initMap">
+    </script>
+    
+ </body>
+
+
+</html>
+

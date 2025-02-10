@@ -1,0 +1,324 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    
+}
+h1{
+    font-size: 30px;
+    align-self: center;
+}
+h2{
+    font-size: 20px;
+}
+header{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    color: white;
+}
+#banner{
+    position: relative;
+    height:500px;
+    
+}
+.banner-bg{
+    background-image: url("../img/cage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    position: absolute;
+    height: 500px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.logo{
+    float: left;
+}
+.logo>img{
+    width: 100px;
+    height: 100px;
+}
+nav>ul{
+    gap: 40px;
+    float: right;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 120px;
+}
+nav>ul>li{
+    
+    padding: 10px;
+    
+    /* background-color: blueviolet; */
+    
+}
+nav>ul>li>a{
+    font-family: 40px;
+    text-decoration: none;
+    color: #e500f5;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+nav>ul>li>a:hover{
+    color: #7d006c;
+}
+.title{
+    margin-top: 80px;
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    
+}
+.title>p{
+    margin-top: 7px;
+    margin-bottom: 10px;
+    
+}
+
+/* button */
+.title-button {
+	background:linear-gradient(to bottom, #7d006c 5%, #e500f5 100%);
+	background-color:#7d006c;
+	border-radius:18px;
+	border:1px solid #7d006c;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+}
+.title-button:hover {
+	background:linear-gradient(to bottom, #e500f5 5%, #7d006c 100%);
+	background-color:#e500f5;
+}
+.title-button:active {
+	position:relative;
+	top:1px;
+}
+/* end button */
+
+/* Main */
+.center{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+}
+#why>ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+#why>ul>li{
+    width: 300px;
+    height: 200px;
+    margin-left: 20px;
+    background-color: #9b3ee9;
+}
+
+/* box */
+    .box>h2{
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .box>p{
+        text-align: center;
+        padding:10px ;
+        color: white;
+        
+    }
+    .icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+    }
+    
+/* end box */
+
+/* Horario */
+#horario{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    height: 324px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#foto-horario{
+    width: 637px;
+    height:100%;
+    background-image: url("../img/Horario.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+
+/* maps */
+#where{
+    align-self: stretch;
+}
+#container-map{
+    max-width: 600px;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+#map{
+    width: 100%;
+    height: 200px;
+    background-color: #e500f5;
+    
+}
+/* end maps */
+footer{
+    
+    margin-top: 200px;
+    padding-bottom: 100px;
+    /* background-color:rgb(38, 38, 38); */
+    background-color:rgb(29, 29, 29);
+    color: white;
+}
+footer>div{
+    
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#where>h2{
+ text-align: center;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+#email-form>h2{
+    text-align: center;
+}
+#email-form{
+    display: flex;
+    flex-direction: column;
+
+}
+#email-form>input,select{
+    margin-top: 5px;
+}
+#email-form>select{
+    width: 171px;
+ 
+}
+#selected{
+    text-align: center;
+}
+
+
+
+
+
+/* animations */
+@keyframes main-animation{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+
+}
+#why{
+    position: relative;
+    left:-100%;
+    animation:main-animation 600ms ease-out forwards;
+}
+ /* Animations */
+@keyframes blur{
+    0%{
+        filter: blur(20px);
+    }
+    100%{
+        filter: blur(0px);
+    }
+}
+body{
+    animation: blur 1.5s forwards;
+}
+
+
+/* Class styles */
+.selected{
+    background-color: #420079 !important;
+}
+.selected>h2{
+    animation: h2-color 2s infinite;
+    
+}
+
+
+/* Media query */
+
+@media(max-width:833px){
+    .logo{
+        float: right;
+    }
+    nav>ul{
+        gap: 14px;
+        float: left;
+        display: flex;
+        padding-top: 20px;
+        padding-left: 5px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    .title{
+        margin-top: 60px;
+    }
+    .title>p {
+        margin: 7px;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .title>a{
+        align-self: center;
+    }
+    .center{
+        margin-top: 60px;
+
+    }
+    #horario{
+        margin-top: 20px;
+    }
+    footer{
+        margin-top: 20px;
+    }
+    
+
+}
