@@ -13,7 +13,7 @@ Web de una academia de Muay Thai, Boxeo y BJJ en Collblanc (L'Hospitalet de Llob
 
 ## Tecnologías
 
-HTML5 · CSS3 · JavaScript · jQuery · Google Maps JavaScript API · EmailJS
+HTML5 · CSS3 · JavaScript · jQuery · Google Maps (mapa integrado) · EmailJS
 
 ## Estructura
 
