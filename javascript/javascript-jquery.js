@@ -1,19 +1,3 @@
-function initMap(){
-    var miLatLng ={lat:41.38440588884453,lng:2.144756599151743};
-    var map = new google.maps.Map(document.getElementById("map"),{
-        zoom:18,
-        center:miLatLng,
-        mapTypeId:"satellite",
-        mapTypeControl:false
-    });
-    var marker = new google.maps.Marker({
-        position:miLatLng,
-        map:map,
-        title:"Aqui estamos!"
-
-    })
-
-}
 //iniciar api email
 (function() {
     emailjs.init({
