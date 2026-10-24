@@ -35,10 +35,6 @@ $(document).ready(function(){
 
 });
 
-$(document).ready(function(){
-    $("html").smoothScroll(500);
-})
-
 
 // dynamic options
 $(document).ready(function(){
